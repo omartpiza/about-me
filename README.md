@@ -11,7 +11,7 @@ Estoy emocionado por esta clase porque deseo mejorar mis habilidades en HTML y C
 
 * [Repositorio About Me](https://github.com/omartpiza/about-me)
 
-* ![Pagina About me](https://omartpiza.github.io/about-me/index.html)
+* [Pagina About me](https://omartpiza.github.io/about-me/index.html)
 
 ### Puntuación de Accesibilidad de Lighthouse
 
