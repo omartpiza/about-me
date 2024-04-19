@@ -1,11 +1,14 @@
 'use strict';
 
-let nombre = prompt("¿Cuál es tu nombre?");
-console.log("Nombre: " + nombre);
-alert("Bienvenido " + nombre);
-document.write("Bienvenido " + nombre);
+function bienvenida(){
+  let nombre = prompt("¿Cuál es tu nombre?");
+  console.log("Nombre: " + nombre);
+  alert("Bienvenido " + nombre);
+  document.write("Bienvenido " + nombre);
+}
+
 let score = 0;
-let preguntasRealizadas = 0;
+/*let preguntasRealizadas = 0;
 
 const preguntas = [
   "¿Soy hincha de universitario?",
@@ -46,23 +49,23 @@ for (let i = 0; i < preguntas.length; i++) {
 if (preguntasRealizadas <= 5) {
   pregunta6();
   pregunta7();
-}
+}*/
 
-/*function pregunta1() {
-let pregunta1 = prompt('¿Soy hincha de universitario?');
-if ( pregunta1.toLowerCase() === 'si' ) {
-  alert('Genial! Y DALE U !!!');
-  console.log("Equipo de futbol: Acertaste");
-  score++;
-} else {
-  alert('¿pero como te vas a equivocar?!!!, si la U es la U!');
-  console.log("Equipo de futbol: Fallaste");
-}
+function pregunta1() {
+  let pregunta1 = prompt('¿Soy hincha de universitario?');
+  if ( pregunta1.toLowerCase() === 'si' ) {
+    alert('Genial! Y DALE U !!!');
+    console.log("Equipo de futbol: Acertaste");
+    score++;
+  } else {
+    alert('¿pero como te vas a equivocar?!!!, si la U es la U!');
+    console.log("Equipo de futbol: Fallaste");
+  }
 }
 
 function pregunta2() {
-let pregunta2 = prompt('¿Me gustan las verduras?');
-if ( pregunta2.toLowerCase() === 'no' ) {
+  let pregunta2 = prompt('¿Me gustan las verduras?');
+  if ( pregunta2.toLowerCase() === 'no' ) {
   alert('Exacto!, a quien le podria gustar! :D');
   console.log("Verduras: Acertaste");
   score++;
@@ -107,7 +110,7 @@ if ( pregunta5.toLowerCase() === 'no' ) {
   alert('te equivocaste!, jajaja soy recontra malo!');
   console.log("futbol: Fallaste");
 }
-}*/
+}
 
 function pregunta6() {
   let talla;
@@ -172,12 +175,13 @@ function pregunta7() {
   console.log("Mascota favorita: Fallaste");
 }
 
-/*pregunta1();
+bienvenida();
+pregunta1();
 pregunta2();
 pregunta3();
 pregunta4();
 pregunta5();
 pregunta6();
-pregunta7();*/
+pregunta7();
 
 console.log("Tu score es: ", score);
