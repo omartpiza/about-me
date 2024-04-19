@@ -15,7 +15,7 @@ Estoy emocionado por esta clase porque deseo mejorar mis habilidades en HTML y C
 
 ### Puntuación de Accesibilidad de Lighthouse
 
-* ![Lighthouse](/img/light2.jpeg)
+* ![Lighthouse](/img/Ligthhouse%20-%20PairProgramming.png)
 
 ### Reflexiones y Comentarios
 
