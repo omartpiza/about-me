@@ -7,20 +7,36 @@ function bienvenida(){
   document.write("Bienvenido " + nombre);
 }
 
-let score = 0;
-/*let preguntasRealizadas = 0;
+/*let score = 0;*/
+let preguntasRealizadas = 0;
 
 const preguntas = [
   "¿Soy hincha de universitario?",
   "¿Me gustan las verduras?",
   "¿Soy guapo?",
   "¿Tengo hijos?",
-  "¿Soy buen jugador de fútbol?"
+  "¿Soy buen jugador de fútbol?",
 ];
 
 const respuestas = ["si", "no", "si", "si", "no"];
 
-function preguntar(pregunta, respuestaCorrecta) {
+function cuestionario(preg, rpta){
+  let score = 0;
+  for(let i = 0; i < 5; i++) {
+    let pregunta = preg[i];
+    let solucion = rpta[i];
+    let rptaUsuario = prompt(pregunta);
+    if(rptaUsuario.toLowerCase() === solucion){
+      alert("CORRECTO");
+      score++;
+    } else {
+      alert("INCORRECTO");
+    }
+  }
+  alert("Tu score es: "+score);
+}
+
+/*function preguntar(pregunta, respuestaCorrecta) {
   let respuestaUsuario = prompt(pregunta);
   console.log("Respuesta del usuario:", respuestaUsuario);
   console.log("Respuesta correcta:", respuestaCorrecta);
@@ -36,6 +52,8 @@ function preguntar(pregunta, respuestaCorrecta) {
     alert("¡INCORRECTO!");
     console.log("Fallaste: " + pregunta);
   }
+  pregunta6();
+  pregunta7();
 }
 
 for (let i = 0; i < preguntas.length; i++) {
@@ -44,14 +62,9 @@ for (let i = 0; i < preguntas.length; i++) {
   if (preguntasRealizadas >= 5) {
     break;
   }
-}
-
-if (preguntasRealizadas <= 5) {
-  pregunta6();
-  pregunta7();
 }*/
 
-function pregunta1() {
+/*function pregunta1() {
   let pregunta1 = prompt('¿Soy hincha de universitario?');
   if ( pregunta1.toLowerCase() === 'si' ) {
     alert('Genial! Y DALE U !!!');
@@ -137,6 +150,8 @@ function pregunta6() {
   }
 }
 
+
+
 function pregunta7() {
   const mascotasFavoritas = ["perro", "gato", "hamster"];
   let respuesta;
@@ -173,10 +188,12 @@ function pregunta7() {
   }
   alert("Se acabaron tus intentos. Mis mascotas favoritas son: " + mascotasTexto + ".");
   console.log("Mascota favorita: Fallaste");
-}
+}*/
 
 bienvenida();
-pregunta1();
+cuestionario(preguntas, respuestas);
+
+/*pregunta1();
 pregunta2();
 pregunta3();
 pregunta4();
@@ -184,4 +201,4 @@ pregunta5();
 pregunta6();
 pregunta7();
 
-console.log("Tu score es: ", score);
+console.log("Tu score es: ", score);*/
