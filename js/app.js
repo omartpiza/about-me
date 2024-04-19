@@ -4,7 +4,6 @@ function bienvenida(){
   let nombre = prompt("¿Cuál es tu nombre?");
   console.log("Nombre: " + nombre);
   alert("Bienvenido " + nombre);
-  document.write("Bienvenido " + nombre);
 }
 
 /*let score = 0;*/
