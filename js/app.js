@@ -1,10 +1,12 @@
 'use strict';
 
-let nombre = prompt("¿Cuál es tu nombre?");
-console.log("Nombre: " + nombre);
-alert("Bienvenido " + nombre);
-document.write("Bienvenido " + nombre);
-let score = 0;
+function bienvenida(){
+  let nombre = prompt("¿Cuál es tu nombre?");
+  console.log("Nombre: " + nombre);
+  alert("Bienvenido " + nombre);
+}
+
+/*let score = 0;*/
 let preguntasRealizadas = 0;
 
 const preguntas = [
@@ -12,12 +14,28 @@ const preguntas = [
   "¿Me gustan las verduras?",
   "¿Soy guapo?",
   "¿Tengo hijos?",
-  "¿Soy buen jugador de fútbol?"
+  "¿Soy buen jugador de fútbol?",
 ];
 
 const respuestas = ["si", "no", "si", "si", "no"];
 
-function preguntar(pregunta, respuestaCorrecta) {
+function cuestionario(preg, rpta){
+  let score = 0;
+  for(let i = 0; i < 5; i++) {
+    let pregunta = preg[i];
+    let solucion = rpta[i];
+    let rptaUsuario = prompt(pregunta);
+    if(rptaUsuario.toLowerCase() === solucion){
+      alert("CORRECTO");
+      score++;
+    } else {
+      alert("INCORRECTO");
+    }
+  }
+  alert("Tu score es: "+score);
+}
+
+/*function preguntar(pregunta, respuestaCorrecta) {
   let respuestaUsuario = prompt(pregunta);
   console.log("Respuesta del usuario:", respuestaUsuario);
   console.log("Respuesta correcta:", respuestaCorrecta);
@@ -33,6 +51,8 @@ function preguntar(pregunta, respuestaCorrecta) {
     alert("¡INCORRECTO!");
     console.log("Fallaste: " + pregunta);
   }
+  pregunta6();
+  pregunta7();
 }
 
 for (let i = 0; i < preguntas.length; i++) {
@@ -41,28 +61,23 @@ for (let i = 0; i < preguntas.length; i++) {
   if (preguntasRealizadas >= 5) {
     break;
   }
-}
-
-if (preguntasRealizadas <= 5) {
-  pregunta6();
-  pregunta7();
-}
+}*/
 
 /*function pregunta1() {
-let pregunta1 = prompt('¿Soy hincha de universitario?');
-if ( pregunta1.toLowerCase() === 'si' ) {
-  alert('Genial! Y DALE U !!!');
-  console.log("Equipo de futbol: Acertaste");
-  score++;
-} else {
-  alert('¿pero como te vas a equivocar?!!!, si la U es la U!');
-  console.log("Equipo de futbol: Fallaste");
-}
+  let pregunta1 = prompt('¿Soy hincha de universitario?');
+  if ( pregunta1.toLowerCase() === 'si' ) {
+    alert('Genial! Y DALE U !!!');
+    console.log("Equipo de futbol: Acertaste");
+    score++;
+  } else {
+    alert('¿pero como te vas a equivocar?!!!, si la U es la U!');
+    console.log("Equipo de futbol: Fallaste");
+  }
 }
 
 function pregunta2() {
-let pregunta2 = prompt('¿Me gustan las verduras?');
-if ( pregunta2.toLowerCase() === 'no' ) {
+  let pregunta2 = prompt('¿Me gustan las verduras?');
+  if ( pregunta2.toLowerCase() === 'no' ) {
   alert('Exacto!, a quien le podria gustar! :D');
   console.log("Verduras: Acertaste");
   score++;
@@ -107,7 +122,7 @@ if ( pregunta5.toLowerCase() === 'no' ) {
   alert('te equivocaste!, jajaja soy recontra malo!');
   console.log("futbol: Fallaste");
 }
-}*/
+}
 
 function pregunta6() {
   let talla;
@@ -133,6 +148,8 @@ function pregunta6() {
     }
   }
 }
+
+
 
 function pregunta7() {
   const mascotasFavoritas = ["perro", "gato", "hamster"];
@@ -170,14 +187,17 @@ function pregunta7() {
   }
   alert("Se acabaron tus intentos. Mis mascotas favoritas son: " + mascotasTexto + ".");
   console.log("Mascota favorita: Fallaste");
-}
+}*/
+
+bienvenida();
+cuestionario(preguntas, respuestas);
 
 /*pregunta1();
 pregunta2();
 pregunta3();
 pregunta4();
-pregunta5();
+pregunta5();*/
 pregunta6();
-pregunta7();*/
+pregunta7();
 
-console.log("Tu score es: ", score);
+/*console.log("Tu score es: ", score);*/
