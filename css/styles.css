@@ -13,6 +13,9 @@ body {
   }
   
   header {
+    
+    position: fixed;
+    width: 75%;
     background-color: #72CEF2;
     padding: 20px;
     border-radius: 20px;
@@ -24,7 +27,6 @@ body {
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
-    display: flex;
   }
   
   nav ul {
@@ -59,7 +61,6 @@ body {
   }
 
   footer {
-    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
