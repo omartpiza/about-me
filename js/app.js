@@ -197,8 +197,8 @@ cuestionario(preguntas, respuestas);
 pregunta2();
 pregunta3();
 pregunta4();
-pregunta5();
+pregunta5();*/
 pregunta6();
 pregunta7();
 
-console.log("Tu score es: ", score);*/
+/*console.log("Tu score es: ", score);*/
