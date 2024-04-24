@@ -15,15 +15,15 @@ Estoy emocionado por esta clase porque deseo mejorar mis habilidades en HTML y C
 
 ### Puntuación de Accesibilidad de Lighthouse
 
-* ![Lighthouse](/img/Ligthhouse%20-%20PairProgramming.png)
+* ![Lighthouse](/img/Ligthhouse-lab05.jpg)
 
 ### Reflexiones y Comentarios
 
 1. ¿Cómo te fue, en general?
-- Me fue bien pero me demore mucho en la parte del logro adicional ya que al hacer un bucle "for" , me arrojaba un prompt vacio luego de las 5 primeras preguntas.
+- Me fue bien solo hacer un poco de limpieza ya que habia avanzando un poco en el pair programming.
 2. ¿Qué observaciones o preguntas tienes acerca de lo que hemos aprendido hasta ahora?
-- Quisiera practicar mas sobre While y for , ya que me genera un poco de problemas el break.
+- Me gustaria ver como adaptaron la pregunta 6 y 7 mis compañeros.
 3. ¿Cuánto tiempo te tomó terminar esta tarea?
-- un aproximado de 3:30 h
+- un aproximado de 2h
 4. Y, antes de que comenzaras, ¿cuánto tiempo creiste que te tomaría terminar esta tarea?
-- Pense que me demoraria 2h.
+- Pense que me demoraria 1h.
